@@ -1,0 +1,22 @@
+Installing Java 8 on CentOS 7
+Step 1: Update
+
+## yum -y update
+
+Step 2: Install Java 8
+## yum install java-1.8.0-openjdk
+
+Step 3:  Verify Java is Installed
+## java -version
+
+Set Java’s Home Environment
+Step 1: Find Java’s Path
+## update-alternatives --config java
+
+Step 2: Setting Java’s Path in Your Environment
+# vim .bash_profile
+# export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/bin/java
+# source .bash_profile
+
+echo $JAVA_HOME
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/bin/java

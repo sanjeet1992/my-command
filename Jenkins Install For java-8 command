@@ -20,3 +20,17 @@ Step 2: Setting Java’s Path in Your Environment
 
 echo $JAVA_HOME
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/bin/java
+
+
+*********************************** Jenkins *********************************
+
+go to This Link: https://pkg.jenkins.io/redhat-stable/
+
+# sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+# sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+#  yum install jenkins -y
+# systemctl start jenkins
+# systemctl enable jenkins
+
+Access: publicIp:8080 -------> Jenkins Dasboard
+
